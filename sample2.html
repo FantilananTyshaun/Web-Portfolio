@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Daily Grind | Craft Coffee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2 { font-family: 'Playfair Display', serif; }
+        .hero-bg { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; }
+    </style>
+</head>
+<body class="bg-[#FAF9F6] text-[#2C2C2C]">
+
+    <nav class="flex justify-between items-center p-6 bg-white/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="text-2xl font-bold tracking-tighter">THE DAILY GRIND</div>
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#menu" class="hover:text-amber-800 transition">Menu</a>
+            <a href="#reviews" class="hover:text-amber-800 transition">Reviews</a>
+            <a href="#location" class="hover:text-amber-800 transition">Location</a>
+        </div>
+        <button class="bg-[#3D2B1F] text-white px-6 py-2 rounded-full hover:bg-amber-900 transition">Order Now</button>
+    </nav>
+
+    <header class="hero-bg h-[80vh] flex items-center justify-center text-center text-white px-4">
+        <div>
+            <h1 class="text-5xl md:text-7xl mb-6">Your Morning, Perfected.</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light">Ethically sourced beans, hand-crafted brews, and a space for the community.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#menu" class="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-amber-100 transition">View Menu</a>
+                <a href="#location" class="border border-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition">Visit Us</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="reviews" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl text-center mb-12">What Our Locals Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 border border-gray-100 rounded-2xl bg-[#FAF9F6]">
+                    <div class="text-amber-600 mb-4 text-xl">★★★★★</div>
+                    <p class="italic mb-4">"The best oat milk latte I've had in years. The atmosphere is quiet enough to get work done but lively enough to feel like home."</p>
+                    <p class="font-bold">— Sarah Jenkins</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl bg-[#FAF9F6]">
+                    <div class="text-amber-600 mb-4 text-xl">★★★★★</div>
+                    <p class="italic mb-4">"Expertly roasted beans. If you're a fan of pour-overs, this is the only spot in town that gets it right every time."</p>
+                    <p class="font-bold">— Marcus Thorne</p>
+                </div>
+                <div class="p-8 border border-gray-100 rounded-2xl bg-[#FAF9F6]">
+                    <div class="text-amber-600 mb-4 text-xl">★★★★★</div>
+                    <p class="italic mb-4">"A hidden gem. The baristas are friendly and actually know their coffee. Highly recommend the seasonal signatures!"</p>
+                    <p class="font-bold">— Elena Rodriguez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="location" class="bg-[#3D2B1F] text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl mb-6 italic">Come Say Hello</h2>
+                <p class="mb-2">123 Espresso Lane</p>
+                <p class="mb-6 italic">Coffee District, NY 10001</p>
+                <h3 class="font-bold mt-4">Hours</h3>
+                <p>Mon - Fri: 7:00 AM - 6:00 PM</p>
+                <p>Sat - Sun: 8:00 AM - 7:00 PM</p>
+            </div>
+            <div class="bg-gray-200 h-64 rounded-xl overflow-hidden">
+                <div class="w-full h-full flex items-center justify-center text-gray-500 italic">
+                    [Google Map Embed Goes Here]
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
