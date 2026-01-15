@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UI Designer Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <strong>UI DESIGNER</strong>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    <div>
+      <h1>Designing the Future for you and me</h1>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About Me</h2>
+    <h3>Name: Tyshaun Fantilanan</h3> <br>
+    <p>
+      I'm a UI Designer specializing in futuristic, high-impact interfaces that balance aesthetics and usability.
+      I help companies and clients turn complex ideas into clean, scalable digital experiences.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Core Skills</h2>
+    <div class="skills">
+      <div class="skill">UI Design</div>
+      <div class="skill">UX Strategy</div>
+      <div class="skill">Wireframing</div>
+      <div class="skill">Canva / Design Products</div>
+      <div class="skill">Figma / Design Systems</div>
+      <div class="skill">Prototyping</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">Client-Focused Design</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Sample Work</h2>
+    <div class="projects">
+      <div class="card">
+        <a href="indexuidesign.html" target="_blank">
+          <img src="assets/futuristic_design1.PNG" alt="Project">
+        </a>
+        <div class="card-content">
+          <h3>Futuristic Clock</h3>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/600x400" alt="Project">
+        <div class="card-content">
+          <h3>AI Dashboard</h3>
+          <p>Data-driven interface designed for clarity and speed.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/600x400" alt="Project">
+        <div class="card-content">
+          <h3>Startup Website</h3>
+          <p>Conversion-focused landing page with modern visuals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Work With Me</h2>
+    <p>Email: shaunrull6@gmail.com</p>
+    <p>Instagram: <a href="https://www.instagram.com/_tshn.rf/" target="_blank" rel="noopener noreferrer">@_tshn.rf</a>
+    </p>
+  </section>
+
+  <footer>
+    <!--© 2026 UI Designer · Futuristic Portfolio-->
+  </footer>
+</body>
+
+</html>
+
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       background: radial-gradient(circle at top, #020617, #000);
@@ -19,8 +111,8 @@
       content: "";
       position: fixed;
       inset: 0;
-      background-image: linear-gradient(rgba(56,189,248,0.08) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(56,189,248,0.08) 1px, transparent 1px);
+      background-image: linear-gradient(rgba(56, 189, 248, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56, 189, 248, 0.08) 1px, transparent 1px);
       background-size: 60px 60px;
       mask-image: radial-gradient(circle at center, black 30%, transparent 70%);
       z-index: -1;
@@ -28,8 +120,13 @@
     }
 
     @keyframes moveGrid {
-      from { transform: translateY(0); }
-      to { transform: translateY(60px); }
+      from {
+        transform: translateY(0);
+      }
+
+      to {
+        transform: translateY(60px);
+      }
     }
 
     nav {
@@ -42,7 +139,7 @@
       align-items: center;
       backdrop-filter: blur(14px);
       background: rgba(2, 6, 23, 0.65);
-      border-bottom: 1px solid rgba(56,189,248,0.2);
+      border-bottom: 1px solid rgba(56, 189, 248, 0.2);
       z-index: 10;
     }
 
@@ -70,7 +167,9 @@
       transition: width 0.3s ease;
     }
 
-    nav a:hover::after { width: 100%; }
+    nav a:hover::after {
+      width: 100%;
+    }
 
     header {
       min-height: 100vh;
@@ -121,9 +220,9 @@
     .skill {
       padding: 1.5rem;
       border-radius: 14px;
-      background: linear-gradient(180deg, rgba(56,189,248,0.08), rgba(2,6,23,0.9));
-      border: 1px solid rgba(56,189,248,0.25);
-      box-shadow: 0 0 25px rgba(56,189,248,0.15);
+      background: linear-gradient(180deg, rgba(56, 189, 248, 0.08), rgba(2, 6, 23, 0.9));
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.15);
       text-align: center;
     }
 
@@ -136,15 +235,15 @@
     .card {
       border-radius: 18px;
       overflow: hidden;
-      background: rgba(2,6,23,0.85);
-      border: 1px solid rgba(129,140,248,0.3);
-      box-shadow: 0 0 30px rgba(129,140,248,0.15);
+      background: rgba(2, 6, 23, 0.85);
+      border: 1px solid rgba(129, 140, 248, 0.3);
+      box-shadow: 0 0 30px rgba(129, 140, 248, 0.15);
       transition: transform 0.4s ease, box-shadow 0.4s ease;
     }
 
     .card:hover {
       transform: translateY(-10px) scale(1.02);
-      box-shadow: 0 0 45px rgba(56,189,248,0.35);
+      box-shadow: 0 0 45px rgba(56, 189, 248, 0.35);
     }
 
     .card img {
@@ -162,92 +261,16 @@
       text-align: center;
       padding: 3rem;
       color: #64748b;
-      border-top: 1px solid rgba(56,189,248,0.2);
+      border-top: 1px solid rgba(56, 189, 248, 0.2);
     }
 
     @media (max-width: 768px) {
-      header h1 { font-size: 2.4rem; }
-      section { padding: 4rem 7%; }
+      header h1 {
+        font-size: 2.4rem;
+      }
+
+      section {
+        padding: 4rem 7%;
+      }
     }
   </style>
-</head>
-<body>
-  <nav>
-    <strong>UI DESIGNER</strong>
-    <div>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <header>
-    <div>
-      <h1>Designing the Future for you and me</h1>
-    </div>
-  </header>
-
-  <section id="about" class="about">
-    <h2 class="section-title">About Me</h2>
-    <h3>Name: Tyshaun Fantilanan</h3> <br>
-    <p>
-      I'm a UI Designer specializing in futuristic, high-impact interfaces that balance aesthetics and usability.
-      I help companies and clients turn complex ideas into clean, scalable digital experiences.
-    </p>
-  </section>
-
-  <section id="skills">
-    <h2 class="section-title">Core Skills</h2>
-    <div class="skills">
-      <div class="skill">UI Design</div>
-      <div class="skill">UX Strategy</div>
-      <div class="skill">Wireframing</div>
-      <div class="skill">Canva / Design Products</div>
-      <div class="skill">Figma / Design Systems</div>
-      <div class="skill">Prototyping</div>
-      <div class="skill">Responsive Design</div>
-      <div class="skill">Client-Focused Design</div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2 class="section-title">Sample Work</h2>
-    <div class="projects">
-      <div class="card">
-        <a href="indexuidesign.html" target="_blank">
-        <img src="assets/futuristic_design1.PNG" alt="Project">
-        </a>
-        <div class="card-content">
-          <h3>Futuristic Clock</h3>
-          <p>High-contrast UI with smooth micro-interactions.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/600x400" alt="Project">
-        <div class="card-content">
-          <h3>AI Dashboard</h3>
-          <p>Data-driven interface designed for clarity and speed.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/600x400" alt="Project">
-        <div class="card-content">
-          <h3>Startup Website</h3>
-          <p>Conversion-focused landing page with modern visuals.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2 class="section-title">Work With Me</h2>
-    <p>Email: shaunrull6@gmail.com</p>
-    <p>Instagram: <a href="https://www.instagram.com/_tshn.rf/" target="_blank" rel="noopener noreferrer">@_tshn.rf</a></p>
-  </section>
-
-  <footer>
-    <!--© 2026 UI Designer · Futuristic Portfolio-->
-  </footer>
-</body>
-</html>
