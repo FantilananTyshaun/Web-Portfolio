@@ -52,12 +52,17 @@
 
         .search-container {
             margin-top: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
 
         input[type="text"] {
             padding: 15px 25px;
             width: 100%;
             max-width: 450px;
+            /* Added box-sizing to prevent padding from breaking width on small screens */
+            box-sizing: border-box; 
             border-radius: 50px;
             border: none;
             outline: none;
@@ -111,7 +116,7 @@
             margin: 40px auto;
             padding: 0 20px;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 30px;
         }
 
@@ -165,6 +170,50 @@
             font-size: 14px;
             color: #576574;
             line-height: 1.6;
+        }
+
+        /* Ensure footer spans full width of grid */
+        footer {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 15px;
+                clip-path: ellipse(200% 100% at 50% 0%);
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 0.9rem;
+                padding: 0 10px;
+            }
+
+            .search-container {
+                padding: 0 10px; /* Add safety padding for the container on mobile */
+            }
+
+            .filters {
+                gap: 10px;
+                padding: 15px;
+            }
+
+            .filter-btn {
+                padding: 10px 16px;
+                font-size: 0.9rem;
+            }
+
+            .container {
+                gap: 20px;
+                margin: 20px auto;
+            }
         }
     </style>
 </head>
@@ -477,6 +526,15 @@
                 <span class="category-tag">Restaurant</span>
                 <h3>Rhamzas</h3>
                 <p>Casual restaurant.</p>
+            </div>
+        </a>
+                <a href="https://www.google.com/maps/place/Shinjuku+Golden+Kai/@6.4889023,124.8397222,17z/data=!3m1!4b1!4m6!3m5!1s0x32f819e4f799b943:0x623bd04dbe0c707!8m2!3d6.488897!4d124.8422971!16s%2Fg%2F11yprbhkjz?entry=ttu&g_ep=EgoyMDI2MDExOS4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D" target="_blank"
+            class="card-link card restaurant">
+            <img src="assets/shinjuku.PNG" alt="Shinjuku Golden Kai">
+            <div class="card-content">
+                <span class="category-tag">Restaurant</span>
+                <h3>Shinjuku Golden Kai</h3>
+                <p>Japanese restaurant.</p>
             </div>
         </a>
         <a href="https://www.google.com/maps/search/Habi+Hotel+Koronadal" target="_blank" class="card-link card hotel">
