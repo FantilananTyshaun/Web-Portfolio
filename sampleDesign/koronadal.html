@@ -236,8 +236,29 @@
         <button class="filter-btn" onclick="filterSelection('restaurant')">🍴 Restaurants</button>
         <button class="filter-btn" onclick="filterSelection('mall')">🛍️ Malls</button>
         <button class="filter-btn" onclick="filterSelection('hotel')">🏨 Hotels</button>
+        <button class="filter-btn" onclick="filterSelection('resort')">🌴 Resorts</button>
+        <button class="filter-btn" onclick="filterSelection('falls')">🌊 Falls</button>
+        <button class="filter-btn" onclick="filterSelection('museum')">🏛️ Museum</button>
     </div>
     <div class="container" id="placesGrid">
+        <a href="https://www.google.com/maps/place/LOUNGE+CAFE/@6.4948486,124.8470001,17z/data=!3m1!4b1!4m6!3m5!1s0x32f819480ed27d81:0x3787a6fadf11b3af!8m2!3d6.4948486!4d124.8495804!16s%2Fg%2F11jyfwwd49?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank" class="card-link card cafe">
+            <img src="assets/lounge.PNG" alt="lounge cafe">
+            <div class="card-content">
+                <span class="category-tag">Cafe</span>
+                <h3>Lounge Cafe</h3>
+                <p>Cozy ambience with good food and drinks</p>
+            </div>
+        </a>
+        <a href="https://www.google.com/maps/place/LJQ+Lounge+II/@6.4999807,124.846767,17z/data=!3m1!4b1!4m6!3m5!1s0x32f8190057afda13:0xad97868659c2ffa2!8m2!3d6.4999807!4d124.8493473!16s%2Fg%2F11x2cwxmpz?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank" class="card-link card cafe">
+            <img src="assets/ljq.PNG" alt="LJQ Lounge II">
+            <div class="card-content">
+                <span class="category-tag">Cafe & Restaurant</span>
+                <h3>LJQ Lounge II</h3>
+                <p>Aesthetic, Cozy, and a studio like vibe</p>
+            </div>
+        </a>
         <a href="https://www.google.com/maps/place/Perch+%26+Pour/@6.4812713,124.8487679,17z/data=!3m1!4b1!4m6!3m5!1s0x32f81f006f917cdb:0xd44343b345337add!8m2!3d6.481266!4d124.8513428!16s%2Fg%2F11yj_c861g?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
             target="_blank" class="card-link card cafe">
             <img src="assets/perch.PNG" alt="Perch and pour">
@@ -245,6 +266,24 @@
                 <span class="category-tag">Cafe</span>
                 <h3>Perch and Pour</h3>
                 <p>Lowkey cafe in Koronadal City</p>
+            </div>
+        </a>
+        <a href="https://www.google.com/maps/place/Tintin's+Bakery+Caf%C4%93/@6.4942155,124.8353821,17z/data=!3m1!4b1!4m6!3m5!1s0x32f818eafa7153ab:0xec5927a36f9bb09b!8m2!3d6.4942155!4d124.8379624!16s%2Fg%2F11c55j6g0h?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank" class="card-link card cafe">
+            <img src="assets/tintins.PNG" alt="Tintins">
+            <div class="card-content">
+                <span class="category-tag">Cafe</span>
+                <h3>Tintins Bakery Cafe</h3>
+                <p>One of the oldest cafes in Koronadal City</p>
+            </div>
+        </a>
+                <a href="https://www.google.com/maps/place/Organikian+Urban+Farms+%26+Cafe/@6.5054298,124.8288719,17z/data=!3m1!4b1!4m6!3m5!1s0x32f819fb8e578c71:0x75068717dbb6dbf6!8m2!3d6.5054298!4d124.8314522!16s%2Fg%2F11h06bdw7f?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank" class="card-link card cafe">
+            <img src="assets/organikian.PNG" alt="Organikian Urban Farms & Cafe">
+            <div class="card-content">
+                <span class="category-tag">Cafe</span>
+                <h3>Organikian Urban Farms & Cafe</h3>
+                <p>A good place to sip coffee and chill</p>
             </div>
         </a>
         <a href="https://www.google.com/maps/place/All+Day+Cafe+by+Rovini/@6.4932116,124.832208,17z/data=!3m1!4b1!4m6!3m5!1s0x32f8190019a7dc1b:0x66d2febb1ec77ce7!8m2!3d6.4932063!4d124.8370789!16s%2Fg%2F11vsv0bfzy?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D"
@@ -600,142 +639,179 @@
         </a>
         <a href="https://www.google.com/maps/place/Dreamweavers+Hotel+by+RedDoorz/@6.4919121,124.8328444,17z/data=!3m1!4b1!4m9!3m8!1s0x32f818c1efdae2a1:0x8750ea4cc08074a!5m2!4m1!1i2!8m2!3d6.4919121!4d124.8354247!16s%2Fg%2F11cffk4vv?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
             target="_blank" class="card-link card hotel">
-            <img src="assets/dreamweavers.PNG" alt="Dreamweavers Hotel by RedDoorz">
+            <img src="assets/green.PNG" alt="Green State Suites">
             <div class="card-content">
                 <span class="category-tag">Hotel</span>
-                <h3>Dreamweavers Hotel by RedDoorz</h3>
-                <p>National Highway hotel.</p>
+                <h3>Green State Suites</h3>
+                <p>A relaxing place to stay in Koronadal.</p>
             </div>
         </a>
-        <a href="https://www.google.com/maps/place/One+Travelers+Place+Boutique+Hotel/@6.493595,124.847996,17z/data=!3m1!4b1!4m9!3m8!1s0x32f819ef50efd463:0x4646ecbb4a0d4f97!5m2!4m1!1i2!8m2!3d6.493595!4d124.8505763!16s%2Fg%2F11yspg_xyz?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
-            target="_blank" class="card-link card hotel">
-            <img src="assets/onetravelers.PNG" alt="One Travelers Place Boutique Hotel">
-            <div class="card-content">
-                <span class="category-tag">Hotel</span>
-                <h3>One Travelers Place Boutique Hotel</h3>
-                <p>Boutique hotel / guesthouse.</p>
-            </div>
-        </a>
-        <a href="https://www.google.com/maps/place/Aqua+Guesthouse/@6.4857232,124.8403818,17z/data=!3m1!4b1!4m9!3m8!1s0x32f819ffeeb9e2df:0xc61bdcd21178195a!5m2!4m1!1i2!8m2!3d6.4857232!4d124.8429621!16s%2Fg%2F11vwwl94xt?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
-            target="_blank" class="card-link card hotel">
-            <img src="assets/aqua.PNG" alt="Aqua Guesthouse">
-            <div class="card-content">
-                <span class="category-tag">Hotel</span>
-                <h3>Aqua Guesthouse</h3>
-                <p>Guesthouse style lodging.</p>
-            </div>
-        </a>
-        <a href="https://www.google.com/maps/place/Greenstate+Suites/@6.4954217,124.845847,17z/data=!3m1!4b1!4m9!3m8!1s0x32f81897241a582f:0xf49d195f50fb3ad6!5m2!4m1!1i2!8m2!3d6.4954217!4d124.8484273!16s%2Fg%2F1w6r5t79?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
-            target="_blank" class="card-link card hotel">
-            <img src="assets/green.PNG" alt="Greenstate Suites">
-            <div class="card-content">
-                <span class="category-tag">Hotel</span>
-                <h3>Greenstate Suites</h3>
-                <p>Suite-style lodging with good reviews.</p>
-            </div>
-        </a>
-        <a href="https://www.google.com/maps/place/Casitas+Verde+Hotel/@6.5060519,124.8348754,17z/data=!3m1!4b1!4m9!3m8!1s0x32f819affd169247:0x71bf04da178f4d28!5m2!4m1!1i2!8m2!3d6.5060519!4d124.8374557!16s%2Fg%2F11gtgd4g85?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
-            target="_blank" class="card-link card hotel">
-            <img src="assets/casitas.PNG" alt="Casitas Verde Hotel">
-            <div class="card-content">
-                <span class="category-tag">Hotel</span>
-                <h3>Casitas Verde Hotel</h3>
-                <p>Well-rated hotel on Gensan Drive.</p>
-            </div>
-        </a>
-        <a href="https://www.google.com/maps/place/Jkenter+Suites/@6.5001262,124.8476932,17z/data=!3m1!4b1!4m9!3m8!1s0x32f81956d74ef1ed:0xbb5c70be44f7aace!5m2!4m1!1i2!8m2!3d6.5001262!4d124.8502735!16s%2Fg%2F11pqrbk0wj?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
-            target="_blank" class="card-link card hotel">
-            <img src="assets/jkenter.PNG" alt="Jkenter Suites">
-            <div class="card-content">
-                <span class="category-tag">Hotel</span>
-                <h3>Jkenter Suites</h3>
-                <p>Boutique suites with strong ratings.</p>
-            </div>
-        </a>
-        <a href="https://www.google.com/maps/place/Aquila+D'+Oro+Bed+and+Breakfast/@6.5074017,124.8419987,17z/data=!3m1!4b1!4m10!3m9!1s0x32f8188a4cbb5499:0xeb38398c04b827a5!5m3!1s2026-02-12!4m1!1i2!8m2!3d6.5074017!4d124.844579!16s%2Fg%2F11gcc_w7rj?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
-            target="_blank" class="card-link card hotel">
-            <img src="assets/aquila.PNG" alt="Aquila D' Oro Bed and Breakfast">
-            <div class="card-content">
-                <span class="category-tag">Hotel</span>
-                <h3>Aquila D' Oro Bed and Breakfast</h3>
-                <p>B&B style accommodation on Balmores Street.</p>
-            </div>
-        </a>
-        <a href="https://www.google.com/maps/place/KCC+Mall+of+Marbel/@6.4986453,124.8431041,17z/data=!4m6!3m5!1s0x32f8189184207805:0x77ac2539440b8a74!8m2!3d6.4987945!4d124.8460921!16s%2Fg%2F1hlgdb_h7?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
+
+        <a href="https://www.google.com/maps/place/KOHI/@7.8293594,123.1421502,8z/data=!4m10!1m2!2m1!1skohi!3m6!1s0x32f8190076c4c30d:0xcff7baa47b6b2b86!8m2!3d6.4938279!4d124.8368082!15sCgRrb2hpWgYiBGtvaGmSAQRjYWZlmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0b2VXSXlWbUZUYTFGNlZraG9ZVll3U1hwWFZHeDNVMFZHYkV4WVl4QULgAQD6AQQIbhBB!16s%2Fg%2F11xf778m5l?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D1" 
             target="_blank" class="card-link card mall">
             <img src="assets/kcc.PNG" alt="KCC Mall of Marbel">
             <div class="card-content">
                 <span class="category-tag">Mall</span>
                 <h3>KCC Mall of Marbel</h3>
-                <p>One of the largest and most popular malls in Koronadal City, with shopping, dining, entertainment,
-                    and services.</p>
+                <p>The biggest shopping mall in the city.</p>
+            </div>
+        </a>
+        <a href="https://www.google.com/maps/place/KOHI/@7.8293594,123.1421502,8z/data=!4m10!1m2!2m1!1skohi!3m6!1s0x32f8190076c4c30d:0xcff7baa47b6b2b86!8m2!3d6.4938279!4d124.8368082!15sCgRrb2hpWgYiBGtvaGmSAQRjYWZlmgFEQ2k5RFFVbFJRVU52WkVOb2RIbGpSamx2VDJ0b2VXSXlWbUZUYTFGNlZraG9ZVll3U1hwWFZHeDNVMFZHYkV4WVl4QULgAQD6AQQIbhBB!16s%2Fg%2F11xf778m5l?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D2" 
+            target="_blank" class="card-link card mall">
+            <img src="assets/ace.PNG" alt="Ace Centerpoint">
+            <div class="card-content">
+                <span class="category-tag">Mall</span>
+                <h3>Ace Centerpoint</h3>
+                <p>One of the oldest malls in the city.</p>
             </div>
         </a>
         <a href="https://www.google.com/maps/place/Gaisano+Grand+Mall+Koronadal/@6.4880359,124.8559874,17z/data=!3m1!4b1!4m6!3m5!1s0x32f819484fce17b7:0x7ea341177e26d311!8m2!3d6.4880359!4d124.8585677!16s%2Fg%2F11r8tvnjz?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
             target="_blank" class="card-link card mall">
-            <img src="assets/gaisano.PNG" alt="Gaisano Grand Mall Koronadal">
+            <img src="assets/gaisano.PNG" alt="Gaisano Grand Mall">
             <div class="card-content">
                 <span class="category-tag">Mall</span>
-                <h3>Gaisano Grand Mall Koronadal</h3>
-                <p>Large shopping mall with shops, dining, groceries, and services.</p>
+                <h3>Gaisano Grand Mall</h3>
+                <p>Buy affordable and quality products.</p>
             </div>
         </a>
-        <a href="https://www.google.com/maps/place/Mall+of+Ace+Centerpoint/@6.500036,124.8428617,17z/data=!3m1!4b1!4m6!3m5!1s0x32f81890dbaa137f:0xde14468814c0bae!8m2!3d6.500036!4d124.845442!16s%2Fg%2F1pzx3z35m?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
-            target="_blank" class="card-link card mall">
-            <img src="assets/ace.PNG" alt="Mall of Ace Centerpoint">
+        <a href="https://www.google.com/maps/place/Siok+Falls/@6.5364805,124.9486846,17z/data=!3m1!4b1!4m6!3m5!1s0x32f824aaa2ea0711:0x7b9213d49ced4fb0!8m2!3d6.5364805!4d124.9512649!16s%2Fg%2F11cncy7z34?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
+            target="_blank" class="card-link card falls">
+            <img src="assets/siok.PNG" alt="Siok Falls">
             <div class="card-content">
-                <span class="category-tag">Mall</span>
-                <h3>Mall of Ace Centerpoint</h3>
-                <p>Community mall with retail, food stalls, and convenience shops.</p>
+                <span class="category-tag">Falls</span>
+                <h3>Siok Falls</h3>
+                <p>A majestic waterfall located in Barangay Mabini.</p>
             </div>
         </a>
-        <footer>
-            <p>© 2026 Discover Koronadal Guide | A Marbelous Experience | Designed for the Crown City of the South</p>
-        </footer>
+        <a href="https://www.google.com/maps/place/Paraiso+Verde+Hotel+%26+Resort/@6.50881,124.8341277,17z/data=!4m10!3m9!1s0x32f818f4ff0c7ef5:0x9eff21b5afae4b9d!5m3!1s2026-02-12!4m1!1i2!8m2!3d6.50881!4d124.836708!16s%2Fg%2F11cskdb2gn?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
+            target="_blank" class="card-link card resort">
+            <img src="assets/paraiso.PNG" alt="Paraiso Verde">
+            <div class="card-content">
+                <span class="category-tag">Resort</span>
+                <h3>Paraiso Verde</h3>
+                <p>A premier water park and resort in the city.</p>
+            </div>
+        </a>
+        <a href="https://www.google.com/maps/place/The+Farm+@+Carpenter+Hill/@6.46297,124.8761469,17z/data=!4m10!3m9!1s0x32f821f1f0a611ff:0x49b4c7c87d7201b7!5m3!1s2026-02-12!4m1!1i2!8m2!3d6.46297!4d124.8787272!16s%2Fg%2F1tdw0_ky?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
+            target="_blank" class="card-link card resort">
+            <img src="assets/thefarm.PNG" alt="The Farm @ Carpenter Hill">
+            <div class="card-content">
+                <span class="category-tag">Resort</span>
+                <h3>The Farm @ Carpenter Hill</h3>
+                <p>A beautiful garden resort perfect for events and relaxation.</p>
+            </div>
+        </a>
 
-        <script>
-            // Filter Functionality
-            function filterSelection(c) {
-                var x, i;
-                x = document.getElementsByClassName("card-link");
-                if (c == "all") c = "";
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                    if (x[i].className.indexOf(c) > -1) {
-                        x[i].style.display = "block";
-                    }
-                }
+        <a href="https://www.google.com/maps/place/Bedrock+Garden+Resort/@6.4770394,124.8451306,17z/data=!3m1!4b1!4m6!3m5!1s0x32f818b3b89c675b:0xd6690e7121077df7!8m2!3d6.4770394!4d124.8477109!16s%2Fg%2F113fv2bm2?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
+            target="_blank" class="card-link card resort">
+            <img src="assets/bedrock.PNG" alt="Bedrock Gardens">
+            <div class="card-content">
+                <span class="category-tag">Resort</span>
+                <h3>Bedrock Gardens</h3>
+                <p>A scenic spot ideal for camping and outdoor activities.</p>
+            </div>
+        </a>
 
-                // Update active button state
-                var btns = document.getElementsByClassName("filter-btn");
-                for (var j = 0; j < btns.length; j++) {
-                    btns[j].classList.remove("active");
-                }
-                if (event) {
-                    event.currentTarget.classList.add("active");
+        <a href="https://www.google.com/maps/place/South+Cotabato+Museum/@6.4976126,124.8381638,17z/data=!3m1!4b1!4m6!3m5!1s0x32f818eccc798eab:0xb8459104317bcb68!8m2!3d6.4976126!4d124.8407441!16s%2Fg%2F1hdzvmh38?entry=ttu&g_ep=EgoyMDI2MDEyMC4wIKXMDSoASAFQAw%3D%3D" 
+            target="_blank" class="card-link card museum">
+            <img src="assets/museum.PNG" alt="South Cotabato Community Museum">
+            <div class="card-content">
+                <span class="category-tag">Museum</span>
+                <h3>South Cotabato Community Museum</h3>
+                <p>Showcasing the rich heritage and culture of the province.</p>
+            </div>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Discover Koronadal Guide | A Marbelous Experience | Designed for the Crown City of the South</p>
+    </footer>
+
+    <script>
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("card");
+            if (c == "all") c = "";
+            
+            // Remove "active" class from all buttons
+            var btns = document.getElementsByClassName("filter-btn");
+            for (var j = 0; j < btns.length; j++) {
+                btns[j].classList.remove("active");
+                if (btns[j].textContent.toLowerCase().includes(c) || (c === "" && btns[j].textContent.includes("All"))) {
+                    btns[j].classList.add("active");
                 }
             }
+            
+            // Add custom active logic for buttons
+            // (Simpler approach for button highlight handled below by click event usually, 
+            // but ensuring functionality here)
+            var btnContainer = document.querySelector(".filters");
+            var buttons = btnContainer.getElementsByClassName("filter-btn");
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    if (current.length > 0) { 
+                        current[0].className = current[0].className.replace(" active", "");
+                    }
+                    this.className += " active";
+                });
+            }
 
-            // Search Functionality
-            function searchFunction() {
-                var input, filter, grid, cards, h3, i, txtValue;
-                input = document.getElementById("searchInput");
-                filter = input.value.toUpperCase();
-                grid = document.getElementById("placesGrid");
-                cards = grid.getElementsByClassName("card-link");
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                else x[i].style.display = "none";
+            }
+            // Manually handle display since we aren't using a .show CSS class in the header
+            for (i = 0; i < x.length; i++) {
+                if (x[i].className.indexOf(c) > -1) {
+                    x[i].style.display = "flex"; /* Restoring flex display for cards */
+                } else {
+                    x[i].style.display = "none";
+                }
+            }
+        }
 
-                for (i = 0; i < cards.length; i++) {
-                    h3 = cards[i].getElementsByTagName("h3")[0];
+        // Helper functions
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        function searchFunction() {
+            var input, filter, cards, h3, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            cards = document.getElementsByClassName("card");
+            for (i = 0; i < cards.length; i++) {
+                h3 = cards[i].getElementsByTagName("h3")[0];
+                if (h3) {
                     txtValue = h3.textContent || h3.innerText;
                     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        cards[i].style.display = "";
+                        cards[i].style.display = "flex";
                     } else {
                         cards[i].style.display = "none";
                     }
-                }
+                }       
             }
-        </script>
-
+        }
+    </script>
 </body>
-
 </html>
